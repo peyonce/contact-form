@@ -19,7 +19,7 @@ body {
     padding: 2rem 3rem;
     border-radius: 12px;
     box-shadow: 0 4px rgba(0,0,0,0.1);
-    width: 100%;
+    width: 90%;
     max-width: 500px;
 }
 
@@ -43,6 +43,13 @@ body {
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 1rem;
+    box-sizing: border-box;
+}
+
+
+.contact-form textarea {
+    min-height: 100px;
+    resize: vertical;
 }
 
 .contact-form button {
@@ -60,4 +67,20 @@ body {
 
 .contact-form button:hover {
     background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .contact-section {
+        padding: 1.5rem 1.5rem;
+    }
+
+    .contact-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 0.95rem;
+    }
 }
